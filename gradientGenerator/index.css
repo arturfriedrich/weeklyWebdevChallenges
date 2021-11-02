@@ -17,6 +17,11 @@ body {
     background-color: #b5caf9;
     padding: 2.5em;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 input {
@@ -31,4 +36,16 @@ input[type=color] {
     width: 100px;
 }
 
+button {
+    border-radius: 5px;
+    border: none;
+    font-size: .825em;
+    padding: .25em .75em;
+    cursor: pointer;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
 
+button:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+}
