@@ -1,0 +1,20 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: hsl(230 35% 7%);
+}
+
+button {
+    border: none;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    background: antiquewhite;
+}
+
+button:hover {
+    width: 15em;
+    height: 15em;
+    border: 5rem solid gray;
+}
