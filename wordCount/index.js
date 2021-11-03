@@ -18,9 +18,16 @@ textareaEl.addEventListener("keydown", function() {
     countEl.textContent = textareaEl.value.split(" ").length
     charCountEl.textContent = textareaEl.value.split("").length
     let words = textareaEl.value.split(" ")
-    let longestWord = ""
-    if (words[words.length - 1].length > longestWord.length && words[words.length - 1] !== " ") {
-        longestWord = words[words.length - 1]
-        console.log(longestWord)
+    var longestWord = "";
+    for(let i = 0; i < words.length; i++){
+        if(words[i].length > longestWord.length){
+        longestWord = words[i];
+        }
+    }
+    longestWordEL.textContent = longestWord
+    if (textareaEl.value === "") {
+        countEl.textContent = ""
+        charCountEl.textContent = ""
+        longestWordEL.textContent = ""
     }
 })
